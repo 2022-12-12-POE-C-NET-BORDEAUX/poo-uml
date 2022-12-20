@@ -1,13 +1,20 @@
-// import './exercices/1_exo_vitess'
-// import './4_conditions'
-// import './5_conditions_multiples'
-// import './6_switch_case'
-// import './7_operateurs_comparaison'
-// import './exercices/2_exo_conditions'
-// import './8_boucle_for'
-// import './exercices/3_exo_for'
-// import './9_boucle_while'
-// import './exercices/exo_devoir3'
-// import './exercices/exo_devoir4'
-// import './10_fonctions'
-import './exercices/exo_mru'
+import { Avion } from './Avion'
+
+const boeing: Avion = new Avion()
+boeing.marque = 'Boeing'
+boeing.modele = '737 Max'
+boeing.nombreSieges = 180
+boeing.couleur = 'blanche'
+console.log(boeing)
+
+const airbus = new Avion()
+airbus.marque = 'Airbus'
+airbus.modele = 'A320'
+airbus.nombreSieges = 150
+airbus.couleur = 'branche'
+console.log(airbus)
+
+// Modeliser un compte Bancaire
+// - numéro de compte
+// - le solde
+// -> trouver les méthodes possibles 
