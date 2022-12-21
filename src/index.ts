@@ -1,5 +1,5 @@
 // import { Avion } from './Avion'
-import { Avion } from './Avion'
+// import { Avion } from './Avion'
 // import { CompteBancaire } from './CompteBancaire'
 // import { Rectangle } from './exercices/Rectangle'
 
@@ -38,5 +38,15 @@ import { Avion } from './Avion'
 // new CompteBancaire('235647236754637453267', 30)
 // new Avion('Beoing', '737 max', 150, 'rouge')
 
-const boeing = new Avion('Boeing', '737 Max', 190, 'blanche')
-console.log(boeing)
+// const boeing = new Avion('Boeing', '737 Max', 190, 'blanche')
+// console.log(boeing)
+
+import { Guerrier } from './jeux-video/guerrier'
+import { Magicien } from './jeux-video/magicien'
+import { Sorcier } from './jeux-video/sorcier'
+
+const chris = new Guerrier('Christian', 100, 'Kalashnikov AK-47')
+const nico = new Magicien('Nicolas', 1000, 'NicoGique')
+const jean = new Sorcier('Jean', 500, 'JeanBague', 'JeanBat')
+
+console.log(chris, nico, jean)
