@@ -3,31 +3,16 @@
 // - comportement différents pour la méthode rencontrer()
 // - Seul le sorcier a 2 armes
 // - Redondance aux niveau des méthodes
-export class Guerrier {
-  private nom: string
-  private dureeDeVie: number
+
+import { EntiteVolant } from './entite-volante'
+import { Personnage } from './personnage'
+
+export class Guerrier extends Personnage implements EntiteVolant {
   private arme: string
 
   constructor(nom: string, dureeDeVie: number, arme: string) {
-    this.dureeDeVie = dureeDeVie
+    super(nom, dureeDeVie)
     this.arme = arme
-    this.nom = nom
-  }
-
-  public getNom() {
-    return this.nom
-  }
-
-  public setNom(nom: string) {
-    this.nom = nom
-  }
-
-  public getDureeDeVie() {
-    return this.dureeDeVie
-  }
-
-  public setDureeDeVie(dureeDeVie: number) {
-    this.dureeDeVie = dureeDeVie
   }
 
   public getArme() {
@@ -40,5 +25,9 @@ export class Guerrier {
 
   rencontrer() {
     console.log('Je vais te tuer')
+  }
+
+  voler(): void {
+    console.log('Le guerre vol!!!!')
   }
 }

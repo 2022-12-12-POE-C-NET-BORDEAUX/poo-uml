@@ -43,10 +43,14 @@
 
 import { Guerrier } from './jeux-video/guerrier'
 import { Magicien } from './jeux-video/magicien'
+// import { Personnage } from './jeux-video/personnage'
 import { Sorcier } from './jeux-video/sorcier'
 
 const chris = new Guerrier('Christian', 100, 'Kalashnikov AK-47')
 const nico = new Magicien('Nicolas', 1000, 'NicoGique')
 const jean = new Sorcier('Jean', 500, 'JeanBague', 'JeanBat')
+// const moi = new Personnage('Luc', 600)
+
+chris.setNom('Chrizo')
 
 console.log(chris, nico, jean)
