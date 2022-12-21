@@ -17,7 +17,7 @@
   "rules": {
     "no-else-return": "error",
     "max-statements": ["error", 20],
-    "max-params": ["error", 3],
+    "max-params": ["error", 5],
     "no-unused-vars": "error"
   }
 }

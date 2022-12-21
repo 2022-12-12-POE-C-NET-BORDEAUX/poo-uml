@@ -1,5 +1,5 @@
 // import { Avion } from './Avion'
-// import { Avion } from './Avion'
+import { Avion } from './Avion'
 // import { CompteBancaire } from './CompteBancaire'
 // import { Rectangle } from './exercices/Rectangle'
 
@@ -37,3 +37,6 @@
 // new Rectangle(500, 250)
 // new CompteBancaire('235647236754637453267', 30)
 // new Avion('Beoing', '737 max', 150, 'rouge')
+
+const boeing = new Avion('Boeing', '737 Max', 190, 'blanche')
+console.log(boeing)
